@@ -1,0 +1,12 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"TKDSystem\\Test\\" : "src"
+		}
+	},
+	"name" : "TKDSystem/test",
+	"type" : "laravel-library",
+	"require" : {
+		"php" : ">=5.6"
+	}
+}
