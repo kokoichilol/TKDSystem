@@ -6,10 +6,10 @@
 @yield('pageCss')
 </head>
 <body>
-	@include('layouts.menuBar')
-	<div class="main">@yield('content')</div>
-	<script>
-		@yield('pageScript')
- 	</script>
+	<div class="main">
+		@include('layouts.menuBar')
+		<div class="content">@yield('content')</div>
+	</div>
+	<script>@yield('pageScript')</script>
 </body>
 </html>

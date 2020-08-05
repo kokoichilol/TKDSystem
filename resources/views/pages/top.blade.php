@@ -9,5 +9,4 @@
 @endsection
 
 @section('pageScript')
-alert('test');
 @endsection
