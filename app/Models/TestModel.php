@@ -10,6 +10,13 @@ class testModel extends Model
     protected $table = 'test';
     protected $guarded = array('ID');
 
+    /*
+     * テストテーブルの全データ取得
+     *
+     * @return $data
+     *
+     */
+
     public function getAllData(){
         $data = DB::table($this->table)->get()->all();
 
