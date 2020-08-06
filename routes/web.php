@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages/top');
-});
+// Route::get('/', function () {
+//     return view('pages/top');
+// });
+
+Route::get('/', 'TopController@init');
 
 Route::get('/main', function () {
     return view('mainLayout');
