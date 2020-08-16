@@ -7,7 +7,7 @@ body{
 }
 
 div.main{
-	width: 100%;
+	width: 80%;
 	height: 100vh;
 	margin: 0 auto;
 	background: #FFFFFF;
@@ -18,10 +18,12 @@ div.content{
 }
 
 div.user_joho_area{
-	float: right;
-	padding-top: 0.5rem;
-	padding-right: 0.5rem;
-	font-size: 16pt;
+	text-align: right;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 16pt;
+    background: beige;
+    border-bottom: 1px solid green;
 }
 
 nav{
