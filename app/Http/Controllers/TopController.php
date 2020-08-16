@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\testModel;
+use App\Models\MUserJohoModel;
 
 class TopController extends Controller
 {
@@ -11,6 +12,17 @@ class TopController extends Controller
         $testModel = new testModel();
         $testData = $testModel->getAllData();
 
-        return view('pages/top', compact('testData'));
+        // ユーザ情報
+        $userJohoModel = new MUserJohoModel();
+        $userData = $userJohoModel->getUserJoho('1');
+
+        // 履歴情報（テスト用ダミーデータnull））
+        $rirekiData = null;
+
+        return view('pages/top', compact(
+            'testData',
+            'userData',
+            'rirekiData'
+            ));
     }
 }
