@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages/top');
 // });
 
-Route::get('/', 'TopController@init');
+// Route::get('/', 'TopController@init');
 
-Route::get('/main', function () {
-    return view('mainLayout');
-});
+Route::get('/', 'LoginController@init');
+Route::post('/', 'LoginController@proceed');
+
+Route::get('/top', 'TopController@init');

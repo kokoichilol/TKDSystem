@@ -6,7 +6,7 @@
 @yield('pageCss')
 </head>
 <body>
-	<div class="main">
+	<div class="main" >
 		@include('layouts.menuBar')
 		<div class="content">@yield('content')</div>
 	</div>

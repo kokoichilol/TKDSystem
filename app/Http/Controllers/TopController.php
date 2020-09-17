@@ -14,7 +14,7 @@ class TopController extends Controller
 
         // ユーザ情報
         $userJohoModel = new MUserJohoModel();
-        $userData = $userJohoModel->getUserJoho('1');
+        $userData = $userJohoModel->getUserJoho('00000001');
 
         // 履歴情報（テスト用ダミーデータnull））
         $rirekiData = null;
@@ -25,4 +25,5 @@ class TopController extends Controller
             'rirekiData'
             ));
     }
+
 }
